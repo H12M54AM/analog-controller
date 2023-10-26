@@ -1,17 +1,16 @@
-#include <Arduino.h>
 #include <ESP32Servo.h>
 
-string link;
-link = "https://github.com/espressif/arduino-esp32.git";
-const int analogInPin1 = 32;
-const int servoPin = 23;
+// string link;
+// link = "https://github.com/espressif/arduino-esp32.git";
+const int analogInPin1 = 13;
+const int servoPin = 29;
 int stickPos1 = 0;
 
 // Servo object
 Servo myservo;
 
 /**
- * @brief X is a temp variable that maps the stickPos1 
+ * @brief x is a temp variable that maps the stickPos1 
  * variable to the range from 0-4096 to 0-180. 
  * 
  * 0-4096 is the range of the correlated value against 
